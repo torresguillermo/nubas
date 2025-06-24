@@ -1,0 +1,721 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+            
+    <meta charset="UTF-8">
+	<meta name="description" content="Descubre el liderazgo auténtico y consciente con Nuria Bas, coach ejecutiva certificada por ICF. Potencia tu liderazgo y crecimiento personal.">
+	<meta name="keywords" content="coach, ejecutiva, nuria, bas, liderazgo, autentico, consciente, ejecutivo certificado, ICF, potenciar, crecimiento, personal">
+	<meta name="author" content="Nuria Bas">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta property="og:title" content=”Coach Ejectuvia - Nuria Bas">
+	<meta property="og:description" content="Simple. Secure. Reliable messaging."/>
+	<meta property="og:url" content="http://nuriabas.com"/>
+	<meta property="og:image"content="http://nuriabas.com/images/nuria-bas-coach-og.jpg"/>
+
+    <title>Coach Ejectuvia - Nuria Bas</title>
+    <style>
+        /* Basic Reset & Typography */
+        :root {
+            --primary-color: #faf9f6; /* Dark Blue */
+            --secondary-color: #ecf0f1; /* Bright Blue */
+            --accent-color: #595959; /* Reddish Accent */
+            --light-gray: #ecf0f1;
+			--hover-color: red;
+            --dark-gray: #7f8c8d;
+            --text-color: #333;
+            --font-sans: 'Playfair Display', serif; /* Simple fallback */
+        }
+            
+            
+        .playfair-display-<uniquifier> {
+            font-family: "Playfair Display", serif;
+            font-optical-sizing: auto;
+            font-weight: <weight>;
+            font-style: normal;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-sans);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--primary-color);
+        }
+
+
+        h1, h2, h3 {
+            color: var(--text-color);
+            margin-bottom: 0.5em;
+        }
+
+        p {
+            margin-bottom: 1em;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 20px 0;
+ 
+        }
+		
+		.extralista {
+			margin: 0;
+			padding: 0;
+		}
+		.extralistb {
+			list-style: none;	
+			background: #ecf0f1;
+			margin-bottom: 12px;
+			padding: 20px;
+			border-radius:88px;
+			text-align:center;
+		}
+        /* Header & Navigation */
+		
+        header {
+            background-color: var(--primary-color) 0;
+            color: var(--text-color);
+            padding: 0.5em 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            /*box-shadow: 0 2px 5px rgba(0,0,0,0.1);*/
+        }
+		
+
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px; /* Override container padding for header */
+        }
+
+        header .logo {
+            font-size: 1.6em;
+            font-weight: bold;
+            text-decoration: none;
+            color: var(--text-color);
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 25px;
+        }
+
+        nav ul li a {
+            color: var(--text-color);
+            text-decoration: none;
+            font-size: 1.1em;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: var(--dark-gray);
+        }
+
+
+		/* Styles for Scrolled Header -- NEW */
+		header.scrolled {
+		    background-color: var(--primary-color); /* New background color (#333) */
+			transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+		}
+ 		
+
+        /* Hero Section */
+        #hero {
+            /* background: var(--secondary-color) url('https://via.placeholder.com/1500x700.png?text=Inspiring+Background') no-repeat center center/cover; */
+			background: color: var(--primary-color);
+            color: var(--text-color);
+            text-align: center;
+            padding: 150px 20px 100px; /* Extra top padding for fixed header */
+            min-height: 70vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+		
+
+        #hero h1 {
+            font-size: 3em;
+            /*margin-bottom: 1em;*/
+            color: var(--text-color);
+			line-height: 1.2;
+			margin: 0 19% 1em 19%;
+            /*text-shadow: 2px 2px 4px rgba(0,0,0,0.5);*/
+        }
+        #hero h3 {
+            color: var(--text-color);
+            font-size: 1.4em;
+            font-weight: 600;
+			line-height: 1.4;
+            /*text-shadow: 2px 2px 4px rgba(0,0,0,0.5);*/
+        }
+        #hero p {
+            font-size: 1.3em;
+            margin: 0 auto;
+            margin-bottom: 1.5em;
+            color: var(--text-color);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            font-size: 1.1em;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+        .cta-buttonSecondary {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: var(--text-color);
+            padding: 12px 25px;
+            text-decoration: none;
+            font-size: 1.1em;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            border: 0px solid #ddd;
+            cursor: pointer;
+			width: 84%;
+			text-align:center;
+			margin-top: auto;
+        }
+		
+
+        .cta-button:hover {
+            background-color: #7f7f7f; /* Darker accent */
+            transform: translateY(-2px);
+        }
+		
+
+
+        /* Sections */
+        section {
+            padding: 60px 0;
+        }
+
+        section:nth-child(even) { /* Alternating background for sections */
+            background-color: var(--primary-color);
+        }
+
+        section h2 {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 40px;
+            position: relative;
+			color: var(--text-color);
+        }
+        /* Underline for section titles */
+        section h2::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 1px;
+            background-color: var(--text-color);
+            margin: 10px auto 16px;
+			            
+        }
+
+        /* About Section */
+        #about .content {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 30px;
+			
+        }
+        #about .text-content {
+            flex: 1;
+            min-width: 300px;
+        }
+		
+        #about .image-content {
+            flex: 1;
+            min-width: 300px;
+            text-align: center;	
+        }
+		
+        #about .image-content img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 70px;
+            /*box-shadow: 0 4px 15px rgba(0,0,0,0.1);*/
+        }
+
+
+        /* Services Section */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .service-item {
+            background-color: white;
+            padding: 24px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            text-align: left;
+			
+        }
+
+        .service-item h3 {
+            color: var(--text-color);
+            margin-bottom: 15px;
+        }
+
+        /* Newsletter Section */
+        #newsletter {
+            background-color: var(--secondary-color);
+            color: white;
+            text-align: center;
+        }
+
+        #newsletter h2, #newsletter p {
+            color: white;
+			color: var(--text-color);
+        }
+        #newsletter h2::after {
+            background-color: var(--text-color);;
+        }
+
+        #newsletter form {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap; /* For smaller screens */
+            gap: 10px;
+        }
+
+        #newsletter input[type="email"] {
+            padding: 12px;
+            font-size: 1em;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: 300px;
+            max-width: 100%;
+        }
+
+        /* Appointment CTA Section */
+        #appointment-cta {
+            text-align: center;
+			background-color: var(--secondary-color);
+        }
+
+        /* Contact Section */
+        #contact p {
+            text-align: center;
+            font-size: 1.1em;
+        }
+        #contact a {
+            color: var(--text-color);
+            text-decoration: none;
+			font-weight:600;
+        }
+        #contact a:hover {
+            text-decoration: underline;
+        }
+		
+        #contact .image-content {
+            flex: 1;
+            min-width: 300px;
+            text-align: center;
+			margin-top:48px;
+		}
+			 
+        #contact .image-content img {
+            max-width: 70%;	
+			min-width: 300px;
+            height: auto;
+            border-radius: 70px;
+            /*box-shadow: 0 4px 15px rgba(0,0,0,0.1);*/
+        }
+
+
+        /* Footer */
+        footer {
+            background-color: var(--primary-color);
+            color: var(--text-color);
+            text-align: center;
+            padding: 20px 0;
+        }
+		
+        footer img {
+			width:12%;
+        }
+
+        /* Scroll Animations */
+        .animate-on-scroll {
+            opacity: 0;
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+
+        .fade-in {
+            transform: translateY(30px); /* Start slightly below */
+        }
+
+        .slide-in-left {
+            transform: translateX(-50px); /* Start from left */
+        }
+
+        .slide-in-right {
+            transform: translateX(50px); /* Start from right */
+        }
+
+        .is-visible {
+            opacity: 1;
+            transform: translateY(0) translateX(0);
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            header .container {
+                flex-direction: column;
+                align-items: center; 
+            }
+            nav ul {
+                margin-top: 5px;
+            }
+            nav ul li {
+                margin: 0 10px;
+            }
+			#hero {
+			padding: 120px 20px 100px; /* Extra top padding for fixed header */
+			}
+            #hero h1 {
+                font-size: 2.2em;
+				margin: 0 0 1em 0;
+            }
+            #hero h3 {
+                /*font-size: 1.2em;*/
+				margin: 0 2em 1em 2em;
+            }
+            #hero p {
+                font-size: 1.1em;
+            }
+            section h2 {
+                font-size: 2em;
+            }
+            #newsletter form {
+                flex-direction: column;
+            }
+            #newsletter input[type="email"] {
+                width: 80%;
+                margin-bottom: 10px;
+            }
+            #about .content {
+                flex-direction: column;
+            }
+			#contact .image-content img {
+				max-width:100%;
+			}
+	        footer img {
+				width:24%;
+	        }
+        }
+		
+        /* Responsive Adjustments */
+        @media (max-width: 1024px) {
+            
+            #hero h1 {
+				margin: 0 0 1em 0;
+            }
+            
+        }
+		
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <a href="#hero" class="logo">Nuria Bas</a>
+            <nav>
+                <ul>
+                    <li><a href="#about">Sobre mí</a></li>
+                    <li><a href="#services">Servicios</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="container animate-on-scroll fade-in">
+                <h3 style="font-weight:400">Impulsa tu liderazgo. Impacta tu futuro.</h3>
+                <h1> Soy Nuria Bas, coach ejecutiva y experta en liderazgo</h1>
+                <a href="#appointment-cta" class="cta-button">Reserva una sesión</a>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="container">
+                <h2 class="animate-on-scroll fade-in">Sobre mí</h2>
+                <div class="content">
+                    <div class="text-content animate-on-scroll slide-in-left">
+                        <p>Soy <b>coach certificada</b> por la <b>International Coaching Federation (ICF)</b>, con una sólida trayectoria profesional y una clara vocación: acompañar a personas que lideran —o están llamadas a hacerlo— a desarrollar un <b>liderazgo más auténtico, consciente y humano</b>.</p>
+                        <p><b>Ingeniera</b> de formación, trabajé durante más de <b>18 años</b> en el sector industrial. A los 28 años fundé mi primera empresa y, poco después, cofundé una Sociedad Anónima. Esos años me enseñaron las dificultades y recompensas de <b>emprender</b>, el valor de la <b>perseverancia</b> y la importancia de <b>adaptarse al cambio</b> en tiempos de <b>incertidumbre</b>.</p>
+                        <p>Uno de los retos clave de mi carrera fue mi etapa como <b>Directora de Ventas Nacional</b> en una <b>multinacional americana</b>, referente en tecnología LED. <b>Lideré equipos</b> en un
+entorno <b>exigente, competitivo</b> y en plena expansión. Esa experiencia no solo me
+permitió desarrollar una <b>visión estratégica</b>, sino que también me hizo ver que liderar
+va más allá de alcanzar resultados: implica <b>conectar, inspirar y generar confianza</b>.</p>
+						<p>La <b>maternidad</b> fue otro punto de inflexión. Me permitió parar, mirar hacia dentro y replantearme lo esencial: cómo quería <b>vivir, trabajar y acompañar a otros</b>. A medida que avanzaba en mi camino, fui conectando con un propósito mayor. Con <b>miedo</b> solté lo que había construido.</p>
+						<p>Esa <b>decisión</b>, tan difícil como liberadora, me permitió dar un giro profundo y alinear mi experiencia con lo que realmente me mueve. Hoy integro toda esa experiencia para
+acompañar a personas como tú a <b>liberar su potencial, fortalecer su liderazgo y crear un impacto positivo desde quiénes son</b>.</p>
+						
+					<h3>Porque el verdadero liderazgo empieza en uno mismo.</h3> 
+                    </div>
+					
+                    <div class="image-content animate-on-scroll fade-in">
+                        <img src="images/nuria-bas-coach-lr.jpg" alt="Coach Ejecutiva - Nuria Bas">
+						
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="newsletter">
+            <div class="container">
+                <h2 class="animate-on-scroll fade-in">Apúntate a mi newsletter</h2>
+                <p class="animate-on-scroll fade-in" style="transition-delay: 0.1s;">Suscríbete y recibe reflexiones, herramientas y recursos estratégicos para impulsar tu liderazgo y crecimiento personal.</p>
+                
+                    
+					<!-- MailerLite Universal -->
+					<script>
+					    (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
+					    .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
+					    n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
+					    (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
+					    ml('account', '1616856');
+					</script>
+					<!-- End MailerLite Universal -->
+					<div class="ml-embedded" data-form="iAn3ub"></div>
+					
+					<!-- 
+				<form action="#" method="POST" class="animate-on-scroll fade-in" style="transition-delay: 0.2s;">		
+						<input type="email" name="email" placeholder="Enter your email address" required>
+                    <button type="submit" class="cta-button">Subscribe</button>
+                </form> 
+                <p style="font-size: 0.8em; margin-top: 10px;" class="animate-on-scroll fade-in" style="transition-delay: 0.3s;">Respetamos tu privacidad. Sin spam, nunca.</p>-->
+            </div>
+        </section>
+
+
+        <section id="services">
+            <div class="container">
+                <h2 class="animate-on-scroll fade-in">Servicios</h2>
+                <div class="text-content animate-on-scroll fade-in">
+					   <div class="services-grid" style="height:100%;">
+						   <p>Mi propósito es <b>impulsarte a desplegar todo tu potencial, superar tus propias
+barreras y dar ese paso decisivo</b> que marque un antes y un después en tu vida, acercándote a aquello que realmente deseas.<br><br>¿Por qué puedo ayudarte? Porque <b>he estado ahí</b>. Sé lo que es llevar el peso de la <b>responsabilidad</b>, sentir la <b>presión</b> de querer llegar a todo y cumplir con las <b>expectativas</b> —propias y ajenas—, mientras la vida parece escaparse entre los dedos. Y también sé lo que implica <b>atreverse a parar, cuestionar y cambiar de rumbo</b>.</p>
+						   <p>Trabajo desde una mirada <b>integral y estratégica</b>, que tiene en cuenta tanto tus objetivos como tus valores, tus recursos internos y tu contexto. Creo que solo cuando estás alineado contigo mismo, con tu entorno y con lo que realmente importante, puedes <b>liderar con claridad, tomar decisiones conscientes y generar impacto de forma sostenible</b>.<br><br>Por eso, <b>no trabajo con fórmulas mágicas ni recetas universales</b>. Trabajo contigo, desde donde estás, para diseñar un <b>proceso a medida</b>, que te permita avanzar con sentido y confianza hacia lo que quieres.</p>
+						</div><br><br>	<h3 class="animate-on-scroll fade-in" style=" text-align:center;">No se trata de hacer más. Se trata de hacerlo con sentido.</h3><br><br>
+					
+					<h2 class="animate-on-scroll fade-in" style=" text-align:center;">Programas:</h2>
+								
+                <div class="services-grid">
+                    <div class="service-item animate-on-scroll fade-in" style="transition-delay: 0.1s;">
+                        <h3 style="text-transform:uppercase;">Programa Inspira</h3>
+                        <p><b>La verdadera influencia no depende del cargo.</b></p>
+						<p>Este programa es para quienes <b>lideran</b> personas, proyectos o áreas dentro de la
+						organización, o quieren <b>reforzar</b> su liderazgo, aunque no tengan equipo a su cargo.
+						Descubrirás cómo generar <b>impacto</b>, desarrollar <b>habilidades</b> clave y fortalecer tu <b>proyección</b> profesional.
+						</p><br>
+						<p><b>Es para ti si</b>
+						<ul style="padding:16;">
+	  					<li>Lideras un equipo, proyecto o buscas aumentar tu influencia en la organización.</li>
+						<li>Quieres más claridad, confianza e impacto en tu estilo de liderazgo.</li>
+						<li>Deseas mejorar tu comunicación y tu capacidad para guiar con seguridad.</li>
+						</ul>
+						<p><b>¿Qué conseguirás?</b>
+						<ul style="padding:16;">
+	  					<li>Estrategias para inspirar, motivar y dar feedback con claridad y conexión.</li>
+						<li>Un modelo de liderazgo consciente, centrado en las personas y los resultados.</li>
+						<li>Herramientas prácticas para tomar decisiones y fortalecer la cohesión del equipo.</li>
+						</ul>
+						</p>
+						
+					<a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/hola-nuriabas/30min'});return false;" target="_blank" class="cta-buttonSecondary animate-on-scroll fade-in" style="transition-delay: 0.2s;">Quiero saber más</a>
+                    </div>
+                    <div class="service-item animate-on-scroll fade-in" style="transition-delay: 0.1s;">
+                         <h3 style="text-transform:uppercase;">Programa Claridad</h3>
+                        <p><b>La claridad no se encuentra. Se construye.</b></p>
+						<p>Este programa es una pausa estratégica para <b>reconectar</b> contigo mismo, recuperar
+<b>foco</b> y tomar <b>decisiones</b> alineadas con lo que realmente es importante para ti. Una brújula interna para avanzar con <b>dirección</b> y <b>propósito</b>, sin dejarte arrastrar por la urgencia.
+						</p><br>
+						<p><b>Es para ti si</b>
+						<ul style="padding:16;">
+	  					<li>Estás en un momento de cambio, bloqueo o incertidumbre profesional.</li>
+						<li>Has perdido conexión con lo que te mueve o te sientes estancado.</li>
+						<li>Necesitas claridad para avanzar con más seguridad y sentido.</li>
+						</ul>
+						<p><b>¿Qué conseguirás?</b>
+						<ul style="padding:16;">
+	  					<li>Ordenar tus pensamientos y redefinir tus prioridades.</li>
+						<li>Identificar lo que hoy te limita y soltar lo que ya no te sirve.</li>
+						<li>Recuperar dirección y tomar decisiones con mayor confianza.</li>
+						</ul>
+						</p>
+						
+					<a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/hola-nuriabas/30min'});return false;" target="_blank" class="cta-buttonSecondary animate-on-scroll fade-in" style="transition-delay: 0.2s;">Quiero saber más</a>
+                    </div>
+                    <div class="service-item animate-on-scroll fade-in" style="transition-delay: 0.1s;">
+                         <h3 style="text-transform:uppercase;">Formación para Empresas</h3>
+                        <p><b>Liderazgo consciente, impacto duradero.</b></p>
+						<p>Diseño e imparto <b>formaciones a medida</b> para empresas que apuestan por el <b>desarrollo real</b> de sus equipos. Acompaño a directivos y mandos intermedios a incorporar una forma de liderar más <b>consciente, conectada y práctica</b>, que transforma la manera de comunicarse, tomar decisiones y construir equipos cohesionados.</p><br>
+						<p><b>Es para tu organización si</b>
+						<ul style="padding:16;">
+	  					<li>Queréis fortalecer el liderazgo y el compromiso de los equipos.</li>
+						<li>Buscáis desarrollar soft skills que generen impacto real en el negocio.</li>
+						<li>Apostáis por el bienestar, la resiliencia y la evolución continua.</li>
+						</ul>
+						<p><b>Áreas de especialización</b>
+						<ul style="padding:16;">
+	  					<li>Liderazgo transformador y consciente.</li>
+						<li>Inteligencia emocional aplicada al entorno profesional.</li>
+						<li>Bienestar, resiliencia y mentalidad de crecimiento.</li>
+						<li>Comunicación efectiva y feedback constructivo.</li>
+						</ul>
+						</p>
+						
+					<a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/hola-nuriabas/30min'});return false;" target="_blank" class="cta-buttonSecondary animate-on-scroll fade-in" style="transition-delay: 0.2s;">Quiero saber más</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <section id="appointment-cta">
+            <div class="container">
+                <h2 class="animate-on-scroll fade-in">¿Quieres avanzar?</h2>
+				
+				<!-- Calendly link widget begin -->
+				<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+				<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+				<!-- <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/hola-nuriabas/30min'});return false;">Schedule time with me</a> -->
+				<!-- Calendly link widget end -->
+				
+		
+				
+                <p class="animate-on-scroll fade-in" style="transition-delay: 0.1s;">Una conversación puede marcar la diferencia. Agenda tu sesión de cortesía y lo valoramos juntos.</p>
+                <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/hola-nuriabas/30min'});return false;" target="_blank" class="cta-button animate-on-scroll fade-in" style="transition-delay: 0.2s;">Reserva una sesión</a>
+                <!-- Or, if you prefer email:
+                <a href="mailto:your.email@example.com?subject=Discovery Call Request" class="cta-button">Email Me to Schedule</a>
+                -->
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <h2 class="animate-on-scroll fade-in">Contacto</h2>
+                <p class="animate-on-scroll fade-in" style="transition-delay: 0.1s;">
+                    ¿Tienes dudas?
+                    <br><br>
+                    Puedes escribirme a: <a href="mailto:hola@nuriabas.com">hola@nuriabas.com</a>
+					<br>
+					Conectar conmigo en Linkedin: <a href="https://www.linkedin.com/in/nuriabas/">@nuriabas</a>
+					<br>
+					Unirte a mi comunidad en Instagram: <a href="https://www.instagram.com/nuriabascoach/">@nuriabascoach</a>
+                    <br>
+                    <!-- Phone: (123) 456-7890 (Optional) -->
+                </p>
+				
+	            <div class="image-content animate-on-scroll fade-in">
+	                <img src="images/nuria-bas-coach-2-lr.jpg" alt="Coach Ejecutiva - Your Name">
+	            </div>
+				
+            </div>
+            
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+			<img class="animate-on-scroll fade-in" src="images/ACC-Associate-Certified-Coach-logo.png" alt="Coach Certificado Asociado - ACC International Coaching Federation">
+            <p>&copy; <span id="currentYear"></span> Nuria Bas. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+		// ---- NEW: Header scroll effect ----
+		const headerElement = document.querySelector('header');
+		const scrollThreshold = 250; // Pixels to scroll before changing header
+
+		window.addEventListener('scroll', () => {
+		    if (window.scrollY > scrollThreshold) {
+		        headerElement.classList.add('scrolled');
+		    } else {
+		        headerElement.classList.remove('scrolled');
+		    }
+		});
+		// ---- END: Header scroll effect ----
+		
+        // Set current year in footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // Scroll Animations
+        const animatedElements = document.querySelectorAll('.animate-on-scroll');
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                    // Optional: unobserve after animation to prevent re-triggering
+                    // observer.unobserve(entry.target);
+                } else {
+                    // Optional: remove class if you want animation to re-trigger when scrolling up
+                    // entry.target.classList.remove('is-visible');
+                }
+            });
+        }, {
+            rootMargin: '0px', // effectively the viewport
+            threshold: 0.1 // 10% of the item is visible
+        });
+
+        animatedElements.forEach(el => observer.observe(el));
+
+        // Simple form submission alert for demo purposes
+        const newsletterForm = document.querySelector('#newsletter form');
+        if (newsletterForm) {
+            newsletterForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                alert('Thank you for subscribing! (This is a demo, no data was sent.)');
+                this.reset();
+            });
+        }
+    </script>
+
+</body>
+</html>
